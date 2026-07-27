@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+.venv/
+
+# Local runtime and editor files
+.env
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Power BI local state
+**/.pbi/localSettings.json
+**/.pbi/cache.abf
+**/.pbi/*.cache
+
+# Generated temporary files
+tmp/
+*.log
+*.inspect.ndjson
+~$*.xlsx
+~$*.pptx

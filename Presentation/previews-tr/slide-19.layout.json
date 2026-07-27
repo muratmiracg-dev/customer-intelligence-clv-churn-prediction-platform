@@ -1,0 +1,1372 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/xcuqk6",
+    "id": "xcuqk6",
+    "slide": 19,
+    "layoutId": "96648055-d10c-4006-a210-66f82a0cc630",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "5c3e4a73-5e88-4a65-af95-4cd22ac1db9f",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#F4F7FB",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "96648055-d10c-4006-a210-66f82a0cc630",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "5c3e4a73-5e88-4a65-af95-4cd22ac1db9f",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "5c3e4a73-5e88-4a65-af95-4cd22ac1db9f",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/c3a98jyh",
+      "id": "1",
+      "bbox": [
+        48,
+        25,
+        650,
+        20
+      ],
+      "geometry": "rect",
+      "text": "NOVARETAIL GROUP  |  MÜŞTERİ ZEKÂSI",
+      "textPreview": "NOVARETAIL GROUP  |  MÜŞTERİ ZEKÂSI",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 11,
+        "typeface": "+mn-lt",
+        "color": "#2E8BFF",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "NOVARETAIL GROUP  |  MÜŞTERİ ZEKÂSI"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "NOVARETAIL GROUP  |  MÜŞTERİ ZEKÂSI",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#2E8BFF",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "NOVARETAIL GROUP  |  MÜŞTERİ ZEKÂSI",
+              "fontSize": 11,
+              "color": "#2E8BFF",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/b21sfexw",
+      "id": "2",
+      "bbox": [
+        48,
+        53,
+        780,
+        52
+      ],
+      "geometry": "rect",
+      "text": "90 Günlük Yol Haritası",
+      "textPreview": "90 Günlük Yol Haritası",
+      "resolvedFontSize": 33,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 33,
+        "typeface": "+mn-lt",
+        "color": "#071423",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "90 Günlük Yol Haritası"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "90 Günlük Yol Haritası",
+          "resolvedTextStyle": {
+            "fontSize": 33,
+            "color": "#071423",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "90 Günlük Yol Haritası",
+              "fontSize": 33,
+              "color": "#071423",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/q1sr69gb",
+      "id": "3",
+      "bbox": [
+        838,
+        56,
+        394,
+        48
+      ],
+      "geometry": "rect",
+      "text": "Portföy prototipinden çalışan bir yetkinliğe gerçekçi geçiş",
+      "textPreview": "Portföy prototipinden çalışan bir yetkinliğe gerçekçi geçiş",
+      "resolvedFontSize": 13,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 13,
+        "typeface": "+mn-lt",
+        "color": "#68778A",
+        "alignment": "right",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Portföy prototipinden çalışan bir yetkinliğe gerçekçi geçiş"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Portföy prototipinden çalışan bir yetkinliğe gerçekçi geçiş",
+          "resolvedTextStyle": {
+            "fontSize": 13,
+            "color": "#68778A",
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Portföy prototipinden çalışan bir yetkinliğe gerçekçi geçiş",
+              "fontSize": 13,
+              "color": "#68778A"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/l83alofy",
+      "id": "4",
+      "bbox": [
+        48,
+        116,
+        1184,
+        3
+      ],
+      "geometry": "rect",
+      "fillColor": "#2E8BFF",
+      "lineColor": "#2E8BFF",
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/k7a9cjyd",
+      "id": "5",
+      "bbox": [
+        1180,
+        680,
+        52,
+        18
+      ],
+      "geometry": "rect",
+      "text": "19",
+      "textPreview": "19",
+      "resolvedFontSize": 10,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 10,
+        "typeface": "+mn-lt",
+        "color": "#68778A",
+        "bold": true,
+        "alignment": "right",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "19"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "19",
+          "resolvedTextStyle": {
+            "fontSize": 10,
+            "color": "#68778A",
+            "bold": true,
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "19",
+              "fontSize": 10,
+              "color": "#68778A",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/z61sjyxs",
+      "id": "6",
+      "bbox": [
+        85,
+        335,
+        1100,
+        0
+      ],
+      "geometry": "straightConnector1",
+      "lineColor": "#D5DFEB",
+      "lineWidth": 3
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/y5sratgn",
+      "id": "7",
+      "bbox": [
+        85,
+        323,
+        24,
+        24
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#2E8BFF",
+      "lineColor": "#FFFFFF",
+      "lineWidth": 3
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/1cza94zu",
+      "id": "8",
+      "bbox": [
+        85,
+        270,
+        160,
+        24
+      ],
+      "geometry": "rect",
+      "text": "0–30 Gün",
+      "textPreview": "0–30 Gün",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 14,
+        "typeface": "+mn-lt",
+        "color": "#2E8BFF",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "0–30 Gün"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "0–30 Gün",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "color": "#2E8BFF",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "0–30 Gün",
+              "fontSize": 14,
+              "color": "#2E8BFF",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gbq90zy9",
+      "id": "9",
+      "bbox": [
+        85,
+        380,
+        330,
+        205
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#EAF3FF",
+      "lineColor": "#2E8BFF",
+      "lineWidth": 1
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ulofu98j",
+      "id": "10",
+      "bbox": [
+        105,
+        404,
+        290,
+        34
+      ],
+      "geometry": "rect",
+      "text": "Temel ve Pilot",
+      "textPreview": "Temel ve Pilot",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 20,
+        "typeface": "+mn-lt",
+        "color": "#071423",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Temel ve Pilot"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Temel ve Pilot",
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "color": "#071423",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Temel ve Pilot",
+              "fontSize": 20,
+              "color": "#071423",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/vmhgnep4",
+      "id": "11",
+      "bbox": [
+        105,
+        460,
+        290,
+        92
+      ],
+      "geometry": "rect",
+      "text": "Kaynak eşleme\nKPI sözlüğü\nPilot cohort",
+      "textPreview": "Kaynak eşleme | KPI sözlüğü | Pilot cohort",
+      "resolvedFontSize": 15,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 15,
+        "typeface": "+mn-lt",
+        "color": "#122033",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Kaynak eşleme"
+          },
+          {
+            "index": 2,
+            "text": "KPI sözlüğü"
+          },
+          {
+            "index": 3,
+            "text": "Pilot cohort"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Kaynak eşleme",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#122033",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Kaynak eşleme",
+              "fontSize": 15,
+              "color": "#122033"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "KPI sözlüğü",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#122033",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "KPI sözlüğü",
+              "fontSize": 15,
+              "color": "#122033"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "Pilot cohort",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#122033",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Pilot cohort",
+              "fontSize": 15,
+              "color": "#122033"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wnqxwjqp",
+      "id": "12",
+      "bbox": [
+        485,
+        323,
+        24,
+        24
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#26C6A5",
+      "lineColor": "#FFFFFF",
+      "lineWidth": 3
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/hozypo7a",
+      "id": "13",
+      "bbox": [
+        485,
+        270,
+        160,
+        24
+      ],
+      "geometry": "rect",
+      "text": "31–60 Gün",
+      "textPreview": "31–60 Gün",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 14,
+        "typeface": "+mn-lt",
+        "color": "#26C6A5",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "31–60 Gün"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "31–60 Gün",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "color": "#26C6A5",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "31–60 Gün",
+              "fontSize": 14,
+              "color": "#26C6A5",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ip8fyt8v",
+      "id": "14",
+      "bbox": [
+        485,
+        380,
+        330,
+        205
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#E8F8F4",
+      "lineColor": "#26C6A5",
+      "lineWidth": 1
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/jqhgryp0",
+      "id": "15",
+      "bbox": [
+        505,
+        404,
+        290,
+        34
+      ],
+      "geometry": "rect",
+      "text": "Model ve Deney",
+      "textPreview": "Model ve Deney",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 20,
+        "typeface": "+mn-lt",
+        "color": "#071423",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Model ve Deney"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Model ve Deney",
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "color": "#071423",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Model ve Deney",
+              "fontSize": 20,
+              "color": "#071423",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4rqx0j6l",
+      "id": "16",
+      "bbox": [
+        505,
+        460,
+        290,
+        92
+      ],
+      "geometry": "rect",
+      "text": "Zaman bazlı validasyon\nA/B tasarımı\nOnay kapısı",
+      "textPreview": "Zaman bazlı validasyon | A/B tasarımı | Onay kapısı",
+      "resolvedFontSize": 15,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 15,
+        "typeface": "+mn-lt",
+        "color": "#122033",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Zaman bazlı validasyon"
+          },
+          {
+            "index": 2,
+            "text": "A/B tasarımı"
+          },
+          {
+            "index": 3,
+            "text": "Onay kapısı"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Zaman bazlı validasyon",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#122033",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Zaman bazlı validasyon",
+              "fontSize": 15,
+              "color": "#122033"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "A/B tasarımı",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#122033",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "A/B tasarımı",
+              "fontSize": 15,
+              "color": "#122033"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "Onay kapısı",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#122033",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Onay kapısı",
+              "fontSize": 15,
+              "color": "#122033"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/5czyto76",
+      "id": "17",
+      "bbox": [
+        885,
+        323,
+        24,
+        24
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#987CF5",
+      "lineColor": "#FFFFFF",
+      "lineWidth": 3
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/6d8f2tor",
+      "id": "18",
+      "bbox": [
+        885,
+        270,
+        160,
+        24
+      ],
+      "geometry": "rect",
+      "text": "61–90 Gün",
+      "textPreview": "61–90 Gün",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 14,
+        "typeface": "+mn-lt",
+        "color": "#987CF5",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "61–90 Gün"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "61–90 Gün",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "color": "#987CF5",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "61–90 Gün",
+              "fontSize": 14,
+              "color": "#987CF5",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 19,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/re1gvypc",
+      "id": "19",
+      "bbox": [
+        885,
+        380,
+        330,
+        205
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#F0ECFF",
+      "lineColor": "#987CF5",
+      "lineWidth": 1
+    },
+    {
+      "order": 20,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3i1wjy5k",
+      "id": "20",
+      "bbox": [
+        905,
+        404,
+        290,
+        34
+      ],
+      "geometry": "rect",
+      "text": "Operasyon",
+      "textPreview": "Operasyon",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 20,
+        "typeface": "+mn-lt",
+        "color": "#071423",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Operasyon"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Operasyon",
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "color": "#071423",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Operasyon",
+              "fontSize": 20,
+              "color": "#071423",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 21,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2hsfat4z",
+      "id": "21",
+      "bbox": [
+        905,
+        460,
+        290,
+        92
+      ],
+      "geometry": "rect",
+      "text": "BI yayını\nAPI entegrasyonu\nİzleme ritmi",
+      "textPreview": "BI yayını | API entegrasyonu | İzleme ritmi",
+      "resolvedFontSize": 15,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 15,
+        "typeface": "+mn-lt",
+        "color": "#122033",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "BI yayını"
+          },
+          {
+            "index": 2,
+            "text": "API entegrasyonu"
+          },
+          {
+            "index": 3,
+            "text": "İzleme ritmi"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "BI yayını",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#122033",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "BI yayını",
+              "fontSize": 15,
+              "color": "#122033"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "API entegrasyonu",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#122033",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "API entegrasyonu",
+              "fontSize": 15,
+              "color": "#122033"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "İzleme ritmi",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#122033",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "İzleme ritmi",
+              "fontSize": 15,
+              "color": "#122033"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 22,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/pkjel8na",
+      "id": "22",
+      "bbox": [
+        48,
+        145,
+        1184,
+        82
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFF4DF",
+      "lineColor": "#F5A623",
+      "lineWidth": 1
+    },
+    {
+      "order": 23,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ojaxc3m5",
+      "id": "23",
+      "bbox": [
+        48,
+        145,
+        6,
+        82
+      ],
+      "geometry": "rect",
+      "fillColor": "#F5A623",
+      "lineColor": "#F5A623",
+      "lineWidth": 0
+    },
+    {
+      "order": 24,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/fe1wfy58",
+      "id": "24",
+      "bbox": [
+        68,
+        161,
+        1146,
+        25
+      ],
+      "geometry": "rect",
+      "text": "Başarı ölçütü",
+      "textPreview": "Başarı ölçütü",
+      "resolvedFontSize": 15,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 15,
+        "typeface": "+mn-lt",
+        "color": "#F5A623",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Başarı ölçütü"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Başarı ölçütü",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#F5A623",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Başarı ölçütü",
+              "fontSize": 15,
+              "color": "#F5A623",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 25,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/et8f6t4n",
+      "id": "25",
+      "bbox": [
+        68,
+        194,
+        1146,
+        22
+      ],
+      "geometry": "rect",
+      "text": "Pilot başarı; yalnızca model metriğiyle değil, artımlı marj, müşteri deneyimi, operasyon uyumu ve kontrol ihlali olmamasıyla değerlendirilir.",
+      "textPreview": "Pilot başarı; yalnızca model metriğiyle değil, artımlı marj, müşteri deneyimi, operasyon uyumu ve kontrol ihlali olmamasıyla değerlendiri...",
+      "resolvedFontSize": 13,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 13,
+        "typeface": "+mn-lt",
+        "color": "#122033",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Pilot başarı; yalnızca model metriğiyle değil, artımlı marj, müşteri deneyimi, operasyon uyumu ve kontrol ihlali olmamasıyla değerlendirilir."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Pilot başarı; yalnızca model metriğiyle değil, artımlı marj, müşteri deneyimi, operasyon uyumu ve kontrol ihlali olmamasıyla değerlendirilir.",
+          "resolvedTextStyle": {
+            "fontSize": 13,
+            "color": "#122033",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Pilot başarı; yalnızca model metriğiyle değil, artımlı marj, müşteri deneyimi, operasyon uyumu ve kontrol ihlali olmamasıyla değerlendirilir.",
+              "fontSize": 13,
+              "color": "#122033"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 26,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/1gjehone",
+      "id": "26",
+      "bbox": [
+        48,
+        680,
+        900,
+        16
+      ],
+      "geometry": "rect",
+      "text": "Sentetik portföy verisi • 2022–2025 • Üretim kesiti: 31 Ara 2025 • Para birimi: TRY",
+      "textPreview": "Sentetik portföy verisi • 2022–2025 • Üretim kesiti: 31 Ara 2025 • Para birimi: TRY",
+      "resolvedFontSize": 9,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 9,
+        "typeface": "+mn-lt",
+        "color": "#68778A",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Sentetik portföy verisi • 2022–2025 • Üretim kesiti: 31 Ara 2025 • Para birimi: TRY"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Sentetik portföy verisi • 2022–2025 • Üretim kesiti: 31 Ara 2025 • Para birimi: TRY",
+          "resolvedTextStyle": {
+            "fontSize": 9,
+            "color": "#68778A",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Sentetik portföy verisi • 2022–2025 • Üretim kesiti: 31 Ara 2025 • Para birimi: TRY",
+              "fontSize": 9,
+              "color": "#68778A"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

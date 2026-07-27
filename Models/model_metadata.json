@@ -1,0 +1,52 @@
+{
+  "project": "Customer Intelligence, CLV & Churn Prediction Platform",
+  "company": "NovaRetail Group",
+  "seed": 20260727,
+  "data_period": [
+    "2022-01-01",
+    "2025-12-31"
+  ],
+  "production_snapshot": "2025-12-31",
+  "churn_horizon_days": 90,
+  "clv_horizon_days": 365,
+  "churn_champion": "Random Forest (calibrated champion)",
+  "clv_champion": "Random Forest Regressor",
+  "churn_threshold": 0.32999999999999996,
+  "feature_columns": [
+    "recency_days",
+    "frequency_12m",
+    "monetary_12m",
+    "gross_margin_12m",
+    "avg_order_value_12m",
+    "discount_rate_12m",
+    "return_rate_12m",
+    "category_diversity_12m",
+    "online_order_share_12m",
+    "sessions_90d",
+    "email_open_rate_12m",
+    "support_tickets_12m",
+    "days_since_last_session",
+    "tenure_days",
+    "loyalty_tier_score",
+    "consent_flag"
+  ],
+  "explainability": {
+    "method": "shap_permutation_explainer",
+    "sample_size": 60,
+    "background_size": 24,
+    "feature_count": 16,
+    "additivity_mean_absolute_error": 2.4609943712524305e-16
+  },
+  "python_version": "3.12.13",
+  "sklearn_version": "1.9.0",
+  "generated_rows": {
+    "dim_customers": 6000,
+    "dim_products": 48,
+    "fact_orders": 50639,
+    "fact_order_lines": 103044,
+    "fact_interactions_monthly": 130671,
+    "dim_campaigns": 8,
+    "fact_campaign_responses": 12000,
+    "calendar": 1461
+  }
+}

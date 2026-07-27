@@ -1,0 +1,20 @@
+{
+  "project": "Customer_Intelligence_Analytics",
+  "pages": 12,
+  "visuals": 97,
+  "tables": [
+    "campaign_summary",
+    "cohort_retention",
+    "customer_360",
+    "dim_calendar",
+    "drift_monitoring",
+    "model_comparison",
+    "monthly_customer_metrics",
+    "risk_bands",
+    "segment_summary",
+    "shap_importance"
+  ],
+  "relationships": 1,
+  "valid": true,
+  "errors": []
+}

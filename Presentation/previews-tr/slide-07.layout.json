@@ -1,0 +1,1239 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/7ba914",
+    "id": "7ba914",
+    "slide": 7,
+    "layoutId": "96648055-d10c-4006-a210-66f82a0cc630",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "5c3e4a73-5e88-4a65-af95-4cd22ac1db9f",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#F4F7FB",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "96648055-d10c-4006-a210-66f82a0cc630",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "5c3e4a73-5e88-4a65-af95-4cd22ac1db9f",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "5c3e4a73-5e88-4a65-af95-4cd22ac1db9f",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/87mlwnep",
+      "id": "1",
+      "bbox": [
+        48,
+        25,
+        650,
+        20
+      ],
+      "geometry": "rect",
+      "text": "NOVARETAIL GROUP  |  MÜŞTERİ ZEKÂSI",
+      "textPreview": "NOVARETAIL GROUP  |  MÜŞTERİ ZEKÂSI",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 11,
+        "typeface": "+mn-lt",
+        "color": "#2E8BFF",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "NOVARETAIL GROUP  |  MÜŞTERİ ZEKÂSI"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "NOVARETAIL GROUP  |  MÜŞTERİ ZEKÂSI",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#2E8BFF",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "NOVARETAIL GROUP  |  MÜŞTERİ ZEKÂSI",
+              "fontSize": 11,
+              "color": "#2E8BFF",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/76dk3ix4",
+      "id": "2",
+      "bbox": [
+        48,
+        53,
+        780,
+        52
+      ],
+      "geometry": "rect",
+      "text": "Customer 360 ve Semantik Model",
+      "textPreview": "Customer 360 ve Semantik Model",
+      "resolvedFontSize": 33,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 33,
+        "typeface": "+mn-lt",
+        "color": "#071423",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Customer 360 ve Semantik Model"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Customer 360 ve Semantik Model",
+          "resolvedTextStyle": {
+            "fontSize": 33,
+            "color": "#071423",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Customer 360 ve Semantik Model",
+              "fontSize": 33,
+              "color": "#071423",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/654judwz",
+      "id": "3",
+      "bbox": [
+        838,
+        56,
+        394,
+        48
+      ],
+      "geometry": "rect",
+      "text": "Değer, risk ve aksiyon için tek müşteri karar kaydı",
+      "textPreview": "Değer, risk ve aksiyon için tek müşteri karar kaydı",
+      "resolvedFontSize": 13,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 13,
+        "typeface": "+mn-lt",
+        "color": "#68778A",
+        "alignment": "right",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Değer, risk ve aksiyon için tek müşteri karar kaydı"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Değer, risk ve aksiyon için tek müşteri karar kaydı",
+          "resolvedTextStyle": {
+            "fontSize": 13,
+            "color": "#68778A",
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Değer, risk ve aksiyon için tek müşteri karar kaydı",
+              "fontSize": 13,
+              "color": "#68778A"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/l4b218fe",
+      "id": "4",
+      "bbox": [
+        48,
+        116,
+        1184,
+        3
+      ],
+      "geometry": "rect",
+      "fillColor": "#2E8BFF",
+      "lineColor": "#2E8BFF",
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/k321s3et",
+      "id": "5",
+      "bbox": [
+        1180,
+        680,
+        52,
+        18
+      ],
+      "geometry": "rect",
+      "text": "07",
+      "textPreview": "07",
+      "resolvedFontSize": 10,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 10,
+        "typeface": "+mn-lt",
+        "color": "#68778A",
+        "bold": true,
+        "alignment": "right",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "07"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "07",
+          "resolvedTextStyle": {
+            "fontSize": 10,
+            "color": "#68778A",
+            "bold": true,
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "07",
+              "fontSize": 10,
+              "color": "#68778A",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/j2tkzyx8",
+      "id": "6",
+      "bbox": [
+        48,
+        148,
+        735,
+        468
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#071423",
+      "lineColor": "#D5DFEB",
+      "lineWidth": 1
+    },
+    {
+      "order": 7,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/n6tozudw",
+      "id": "7",
+      "bbox": [
+        48,
+        148,
+        735,
+        468
+      ],
+      "geometry": "roundRect",
+      "alt": "Customer 360 analytical dashboard",
+      "contentType": "image/png",
+      "imageFit": "contain",
+      "imageMask": {
+        "geometry": "roundRect",
+        "adjustmentList": [
+          {
+            "name": "adj",
+            "formula": "val 2564"
+          }
+        ]
+      },
+      "asset": {
+        "assetId": "dfd6a1f8-ef63-440a-9714-bca001755d57",
+        "contentType": "image/png",
+        "byteLength": 663609
+      }
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/50f2dcfi",
+      "id": "8",
+      "bbox": [
+        810,
+        148,
+        422,
+        82
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#2E8BFF",
+      "lineWidth": 1
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4z6l47ex",
+      "id": "9",
+      "bbox": [
+        810,
+        148,
+        6,
+        82
+      ],
+      "geometry": "rect",
+      "fillColor": "#2E8BFF",
+      "lineColor": "#2E8BFF",
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/6t4fixkz",
+      "id": "10",
+      "bbox": [
+        830,
+        164,
+        384,
+        25
+      ],
+      "geometry": "rect",
+      "text": "Kim?",
+      "textPreview": "Kim?",
+      "resolvedFontSize": 15,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 15,
+        "typeface": "+mn-lt",
+        "color": "#2E8BFF",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Kim?"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Kim?",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#2E8BFF",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Kim?",
+              "fontSize": 15,
+              "color": "#2E8BFF",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/rudgb21k",
+      "id": "11",
+      "bbox": [
+        830,
+        197,
+        384,
+        22
+      ],
+      "geometry": "rect",
+      "text": "Bölge, kanal, sadakat seviyesi ve pazarlama izni",
+      "textPreview": "Bölge, kanal, sadakat seviyesi ve pazarlama izni",
+      "resolvedFontSize": 13,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 13,
+        "typeface": "+mn-lt",
+        "color": "#122033",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Bölge, kanal, sadakat seviyesi ve pazarlama izni"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Bölge, kanal, sadakat seviyesi ve pazarlama izni",
+          "resolvedTextStyle": {
+            "fontSize": 13,
+            "color": "#122033",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Bölge, kanal, sadakat seviyesi ve pazarlama izni",
+              "fontSize": 13,
+              "color": "#122033"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/svmxk725",
+      "id": "12",
+      "bbox": [
+        810,
+        242,
+        422,
+        82
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#2AC7E8",
+      "lineWidth": 1
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/tgvydcjq",
+      "id": "13",
+      "bbox": [
+        810,
+        242,
+        6,
+        82
+      ],
+      "geometry": "rect",
+      "fillColor": "#2AC7E8",
+      "lineColor": "#2AC7E8",
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ipkfedk3",
+      "id": "14",
+      "bbox": [
+        830,
+        258,
+        384,
+        25
+      ],
+      "geometry": "rect",
+      "text": "Ne yaptı?",
+      "textPreview": "Ne yaptı?",
+      "resolvedFontSize": 15,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 15,
+        "typeface": "+mn-lt",
+        "color": "#2AC7E8",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Ne yaptı?"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Ne yaptı?",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#2AC7E8",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Ne yaptı?",
+              "fontSize": 15,
+              "color": "#2AC7E8",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/jqtg7i18",
+      "id": "15",
+      "bbox": [
+        830,
+        291,
+        384,
+        22
+      ],
+      "geometry": "rect",
+      "text": "12 aylık sipariş, gelir, marj ve iade davranışı",
+      "textPreview": "12 aylık sipariş, gelir, marj ve iade davranışı",
+      "resolvedFontSize": 13,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 13,
+        "typeface": "+mn-lt",
+        "color": "#122033",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "12 aylık sipariş, gelir, marj ve iade davranışı"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "12 aylık sipariş, gelir, marj ve iade davranışı",
+          "resolvedTextStyle": {
+            "fontSize": 13,
+            "color": "#122033",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "12 aylık sipariş, gelir, marj ve iade davranışı",
+              "fontSize": 13,
+              "color": "#122033"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4r2xgn2t",
+      "id": "16",
+      "bbox": [
+        810,
+        336,
+        422,
+        82
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#26C6A5",
+      "lineWidth": 1
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/5sby9sje",
+      "id": "17",
+      "bbox": [
+        810,
+        336,
+        6,
+        82
+      ],
+      "geometry": "rect",
+      "fillColor": "#26C6A5",
+      "lineColor": "#26C6A5",
+      "lineWidth": 0
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2lofqhk7",
+      "id": "18",
+      "bbox": [
+        830,
+        352,
+        384,
+        25
+      ],
+      "geometry": "rect",
+      "text": "Değeri ne?",
+      "textPreview": "Değeri ne?",
+      "resolvedFontSize": 15,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 15,
+        "typeface": "+mn-lt",
+        "color": "#26C6A5",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Değeri ne?"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Değeri ne?",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#26C6A5",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Değeri ne?",
+              "fontSize": 15,
+              "color": "#26C6A5",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 19,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3mxgjm1s",
+      "id": "19",
+      "bbox": [
+        830,
+        385,
+        384,
+        22
+      ],
+      "geometry": "rect",
+      "text": "RFM segmenti, CLV tahmini ve değer bandı",
+      "textPreview": "RFM segmenti, CLV tahmini ve değer bandı",
+      "resolvedFontSize": 13,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 13,
+        "typeface": "+mn-lt",
+        "color": "#122033",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "RFM segmenti, CLV tahmini ve değer bandı"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "RFM segmenti, CLV tahmini ve değer bandı",
+          "resolvedTextStyle": {
+            "fontSize": 13,
+            "color": "#122033",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "RFM segmenti, CLV tahmini ve değer bandı",
+              "fontSize": 13,
+              "color": "#122033"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 20,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/zqpcbe14",
+      "id": "20",
+      "bbox": [
+        810,
+        430,
+        422,
+        82
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#987CF5",
+      "lineWidth": 1
+    },
+    {
+      "order": 21,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/y5gv290j",
+      "id": "21",
+      "bbox": [
+        810,
+        430,
+        6,
+        82
+      ],
+      "geometry": "rect",
+      "fillColor": "#987CF5",
+      "lineColor": "#987CF5",
+      "lineWidth": 0
+    },
+    {
+      "order": 22,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ls7udoza",
+      "id": "22",
+      "bbox": [
+        830,
+        446,
+        384,
+        25
+      ],
+      "geometry": "rect",
+      "text": "Riski ne?",
+      "textPreview": "Riski ne?",
+      "resolvedFontSize": 15,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 15,
+        "typeface": "+mn-lt",
+        "color": "#987CF5",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Riski ne?"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Riski ne?",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#987CF5",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Riski ne?",
+              "fontSize": 15,
+              "color": "#987CF5",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 23,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/0ryd4jip",
+      "id": "23",
+      "bbox": [
+        830,
+        479,
+        384,
+        22
+      ],
+      "geometry": "rect",
+      "text": "90 günlük churn olasılığı, risk bandı ve SHAP nedenleri",
+      "textPreview": "90 günlük churn olasılığı, risk bandı ve SHAP nedenleri",
+      "resolvedFontSize": 13,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 13,
+        "typeface": "+mn-lt",
+        "color": "#122033",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "90 günlük churn olasılığı, risk bandı ve SHAP nedenleri"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "90 günlük churn olasılığı, risk bandı ve SHAP nedenleri",
+          "resolvedTextStyle": {
+            "fontSize": 13,
+            "color": "#122033",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "90 günlük churn olasılığı, risk bandı ve SHAP nedenleri",
+              "fontSize": 13,
+              "color": "#122033"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 24,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/nu9cfeh0",
+      "id": "24",
+      "bbox": [
+        810,
+        524,
+        422,
+        82
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#F5A623",
+      "lineWidth": 1
+    },
+    {
+      "order": 25,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/mt0v690v",
+      "id": "25",
+      "bbox": [
+        810,
+        524,
+        6,
+        82
+      ],
+      "geometry": "rect",
+      "fillColor": "#F5A623",
+      "lineColor": "#F5A623",
+      "lineWidth": 0
+    },
+    {
+      "order": 26,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/9wruhoz6",
+      "id": "26",
+      "bbox": [
+        830,
+        540,
+        384,
+        25
+      ],
+      "geometry": "rect",
+      "text": "Ne yapmalı?",
+      "textPreview": "Ne yapmalı?",
+      "resolvedFontSize": 15,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 15,
+        "typeface": "+mn-lt",
+        "color": "#F5A623",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Ne yapmalı?"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Ne yapmalı?",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#F5A623",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Ne yapmalı?",
+              "fontSize": 15,
+              "color": "#F5A623",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 27,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/8vid8jil",
+      "id": "27",
+      "bbox": [
+        830,
+        573,
+        384,
+        22
+      ],
+      "geometry": "rect",
+      "text": "Önerilen aksiyon, teklif maliyeti ve beklenen ROI",
+      "textPreview": "Önerilen aksiyon, teklif maliyeti ve beklenen ROI",
+      "resolvedFontSize": 13,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 13,
+        "typeface": "+mn-lt",
+        "color": "#122033",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Önerilen aksiyon, teklif maliyeti ve beklenen ROI"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Önerilen aksiyon, teklif maliyeti ve beklenen ROI",
+          "resolvedTextStyle": {
+            "fontSize": 13,
+            "color": "#122033",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Önerilen aksiyon, teklif maliyeti ve beklenen ROI",
+              "fontSize": 13,
+              "color": "#122033"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 28,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/vy9cjyhc",
+      "id": "28",
+      "bbox": [
+        48,
+        680,
+        900,
+        16
+      ],
+      "geometry": "rect",
+      "text": "Sentetik portföy verisi • 2022–2025 • Üretim kesiti: 31 Ara 2025 • Para birimi: TRY",
+      "textPreview": "Sentetik portföy verisi • 2022–2025 • Üretim kesiti: 31 Ara 2025 • Para birimi: TRY",
+      "resolvedFontSize": 9,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 9,
+        "typeface": "+mn-lt",
+        "color": "#68778A",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Sentetik portföy verisi • 2022–2025 • Üretim kesiti: 31 Ara 2025 • Para birimi: TRY"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Sentetik portföy verisi • 2022–2025 • Üretim kesiti: 31 Ara 2025 • Para birimi: TRY",
+          "resolvedTextStyle": {
+            "fontSize": 9,
+            "color": "#68778A",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Sentetik portföy verisi • 2022–2025 • Üretim kesiti: 31 Ara 2025 • Para birimi: TRY",
+              "fontSize": 9,
+              "color": "#68778A"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

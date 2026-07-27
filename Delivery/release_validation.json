@@ -1,0 +1,86 @@
+{
+  "project": "Customer Intelligence, CLV & Churn Prediction Platform",
+  "version": "1.0.0",
+  "release_date": "2026-07-27",
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "required_key_files",
+      "passed": true,
+      "details": []
+    },
+    {
+      "check": "dataset_file_counts",
+      "passed": true,
+      "details": {
+        "raw": 8,
+        "processed": 23
+      }
+    },
+    {
+      "check": "customer_360_rows",
+      "passed": true,
+      "details": 6000
+    },
+    {
+      "check": "pipeline_quality_gates",
+      "passed": true,
+      "details": "10/10"
+    },
+    {
+      "check": "pbip_validation",
+      "passed": true,
+      "details": {
+        "project": "Customer_Intelligence_Analytics",
+        "pages": 12,
+        "visuals": 97,
+        "tables": [
+          "campaign_summary",
+          "cohort_retention",
+          "customer_360",
+          "dim_calendar",
+          "drift_monitoring",
+          "model_comparison",
+          "monthly_customer_metrics",
+          "risk_bands",
+          "segment_summary",
+          "shap_importance"
+        ],
+        "relationships": 1,
+        "valid": true,
+        "errors": []
+      }
+    },
+    {
+      "check": "excel_formula_error_scan",
+      "passed": true,
+      "details": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "check": "presentation_slide_counts",
+      "passed": true,
+      "details": {
+        "english": 20,
+        "turkish": 20
+      }
+    },
+    {
+      "check": "executive_pdf_pages",
+      "passed": true,
+      "details": 12
+    },
+    {
+      "check": "tableau_structure",
+      "passed": true,
+      "details": {
+        "worksheets": 8,
+        "dashboards": 3
+      }
+    },
+    {
+      "check": "readme_relative_links",
+      "passed": true,
+      "details": []
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "recency_days": 94,
+  "frequency_12m": 4,
+  "monetary_12m": 12450,
+  "gross_margin_12m": 3480,
+  "avg_order_value_12m": 3112.5,
+  "discount_rate_12m": 0.16,
+  "return_rate_12m": 0.0,
+  "category_diversity_12m": 3,
+  "online_order_share_12m": 0.75,
+  "sessions_90d": 8,
+  "email_open_rate_12m": 0.42,
+  "support_tickets_12m": 1,
+  "days_since_last_session": 18,
+  "tenure_days": 720,
+  "loyalty_tier_score": 3,
+  "consent_flag": 1
+}
+

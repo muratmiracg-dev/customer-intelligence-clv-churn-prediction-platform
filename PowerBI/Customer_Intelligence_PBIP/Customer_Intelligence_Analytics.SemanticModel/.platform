@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Customer Intelligence Analytics"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "1bf9bbf1-22c2-5e54-b7b7-82c2a49fb35a"
+  }
+}

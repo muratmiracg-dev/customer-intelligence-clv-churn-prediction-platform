@@ -1,0 +1,31 @@
+{
+  "name": "Customer Intelligence Dark",
+  "dataColors": [
+    "#36D7B7",
+    "#4CA6FF",
+    "#A78BFA",
+    "#FFB547",
+    "#FF647C",
+    "#67E8F9"
+  ],
+  "background": "#07111F",
+  "foreground": "#F4F7FB",
+  "tableAccent": "#36D7B7",
+  "textClasses": {
+    "callout": {
+      "fontFace": "Segoe UI Semibold",
+      "fontSize": 24,
+      "color": "#EAF2FF"
+    },
+    "title": {
+      "fontFace": "Segoe UI Semibold",
+      "fontSize": 12,
+      "color": "#EAF2FF"
+    },
+    "label": {
+      "fontFace": "Segoe UI",
+      "fontSize": 10,
+      "color": "#8EA3BA"
+    }
+  }
+}

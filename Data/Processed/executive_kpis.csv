@@ -1,0 +1,17 @@
+kpi,value,format
+Customers,6000.0,count
+Active Customers 12M,4067.0,count
+Net Revenue 12M,55638616.93,TRY
+Gross Margin 12M,11867612.77,TRY
+Predicted CLV 12M,11892417.918335585,TRY
+High/Critical Risk Customers,2682.0,count
+Revenue at Risk,5966887.8,TRY
+Average Churn Probability,0.544339308175382,percent
+M3 Cohort Retention,0.35071126202100417,percent
+Churn ROC-AUC,0.8666127954282414,decimal
+Churn PR-AUC,0.9083408942321707,decimal
+Lift at Top 10%,1.7738073918547566,multiple
+CLV Test MAE,1258.3801343746911,TRY
+CLV Test R2,0.5644907295673895,decimal
+Campaign Budget Allocated,236419.0,TRY
+Expected Incremental Margin,546756.2291167218,TRY
