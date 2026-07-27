@@ -1,0 +1,25 @@
+{
+  "ndjson": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}",
+  "truncated": false,
+  "metadata": {
+    "revision": "qwzjyl",
+    "target": {
+      "id": "wb/q6y51w",
+      "beforeLines": 0,
+      "afterLines": 0
+    },
+    "kind": {
+      "requested": "match",
+      "tokens": [
+        "match"
+      ]
+    },
+    "include": {
+      "tokens": []
+    },
+    "exclude": {
+      "tokens": []
+    },
+    "notices": []
+  }
+}

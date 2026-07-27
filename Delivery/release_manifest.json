@@ -1,0 +1,47 @@
+[
+  {
+    "path": "PowerBI/Customer_Intelligence_PBIP.zip",
+    "size_bytes": 551680,
+    "sha256": "40a98b808e16e6db9186bf1437f9a1af4bc39af5723944c21c4bdb227fd2d4e3"
+  },
+  {
+    "path": "Excel/Customer_Intelligence_CLV_Churn_Campaign_Planner.xlsx",
+    "size_bytes": 1641531,
+    "sha256": "a26ea2695fb1b3b07bee133a36180ba9817cf4f5d999feebb1aff0bfd12c77a0"
+  },
+  {
+    "path": "Tableau/Customer_Intelligence_Dashboard.twb",
+    "size_bytes": 8489,
+    "sha256": "7b60ef358ece59b7160e3dc7a9db26947885ea3687281478a63e30bffa05f63b"
+  },
+  {
+    "path": "Presentation/Customer_Intelligence_CLV_Churn_Prediction_Professional_Deck_EN.pptx",
+    "size_bytes": 3588598,
+    "sha256": "df516983a867ce081631bbe2047dd1eef8f3aae28e5056264eb97ff1138a7fb3"
+  },
+  {
+    "path": "Presentation/Musteri_Zekasi_CLV_Churn_Tahmin_Platformu_Profesyonel_Sunum_TR.pptx",
+    "size_bytes": 3589840,
+    "sha256": "7183860ca7c9e0fb8d9a31c7bd80ecec92b6c16b9416c2b8c10fd32446eccbbc"
+  },
+  {
+    "path": "Reports/Customer_Intelligence_Executive_Report_12_Page_Vector_HD.pdf",
+    "size_bytes": 81428,
+    "sha256": "3529e8f74a8c1d6a4abbd2648e1a53a4e08904add710af91c189571b55a68b87"
+  },
+  {
+    "path": "Models/churn_champion.joblib",
+    "size_bytes": 11180317,
+    "sha256": "c818a4f656033c4579db5153cc97fc6e89a205b651e999f494342e3da7b7fc0a"
+  },
+  {
+    "path": "Models/clv_champion.joblib",
+    "size_bytes": 4910352,
+    "sha256": "a1635d8348cef1915dc1162d9729c0deff0de67f05887a40da0a57f63d8a7556"
+  },
+  {
+    "path": "SQL/customer_intelligence.db",
+    "size_bytes": 33116160,
+    "sha256": "f543f69b40568533db499fc18df3c0276a793a64a2fde46b490217d04ea63ce0"
+  }
+]

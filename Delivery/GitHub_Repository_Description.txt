@@ -1,0 +1,1 @@
+End-to-end customer intelligence platform with RFM, cohort retention, predictive CLV, calibrated churn, SHAP explainability, campaign optimization, Power BI, Excel, Tableau, FastAPI, Streamlit, SQL, testing and model governance.

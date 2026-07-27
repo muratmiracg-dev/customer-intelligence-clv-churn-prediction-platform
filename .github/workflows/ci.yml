@@ -1,0 +1,50 @@
+name: Customer Intelligence CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  quality-and-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Ruff quality gate
+        run: ruff check Python/src API App tests
+
+      - name: Unit and artifact tests
+        env:
+          PYTHONPATH: Python/src
+        run: pytest --cov=API --cov-report=term-missing --cov-report=xml
+
+      - name: Validate SQL database
+        run: |
+          python - <<'PY'
+          import sqlite3
+          with sqlite3.connect("SQL/customer_intelligence.db") as connection:
+              assert connection.execute("SELECT COUNT(*) FROM customer_360").fetchone()[0] == 6000
+              assert connection.execute("SELECT COUNT(*) FROM vw_campaign_portfolio").fetchone()[0] > 0
+          PY
+
+      - name: Upload coverage
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-report
+          path: coverage.xml

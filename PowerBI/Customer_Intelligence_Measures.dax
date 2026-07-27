@@ -1,0 +1,46 @@
+// Customer Intelligence, CLV & Churn Prediction Platform
+// Reusable DAX measure catalog
+
+// [monthly_customer_metrics]
+KPI Net Revenue = SUM(monthly_customer_metrics[Net Revenue])
+KPI Revenue Prior Year = CALCULATE([KPI Net Revenue],DATEADD(dim_calendar[Date],-1,YEAR))
+KPI Gross Margin = SUM(monthly_customer_metrics[Gross Margin])
+KPI Active Customers = SUM(monthly_customer_metrics[Active Customers])
+KPI Predicted CLV = MAX(monthly_customer_metrics[Predicted CLV])
+KPI Revenue at Risk = MAX(monthly_customer_metrics[Revenue at Risk])
+KPI New Customers = SUM(monthly_customer_metrics[New Customers])
+KPI Campaign Budget = MAX(monthly_customer_metrics[Campaign Budget])
+KPI Customers = MAX(monthly_customer_metrics[Customers])
+KPI Recency Days = AVERAGE(monthly_customer_metrics[Average Recency Days])
+KPI Gross Margin Rate = DIVIDE([KPI Gross Margin],[KPI Net Revenue],0)
+KPI Churn Probability = MAX(monthly_customer_metrics[Churn Probability])
+KPI Campaign ROI = MAX(monthly_customer_metrics[Campaign ROI])
+KPI Churn ROC-AUC = MAX(monthly_customer_metrics[Churn ROC-AUC])
+KPI Net Revenue PY = CALCULATE([KPI Net Revenue],DATEADD(dim_calendar[Date],-1,YEAR))
+KPI Predicted CLV Benchmark = [KPI Predicted CLV]
+KPI Net Revenue YoY % = DIVIDE([KPI Net Revenue]-[KPI Net Revenue PY],[KPI Net Revenue PY],0)
+KPI Revenue YoY Change = [KPI Net Revenue]-[KPI Net Revenue PY]
+
+// [segment_summary]
+Segment Revenue = SUM(segment_summary[Revenue 12M])
+Segment Predicted CLV = SUM(segment_summary[Predicted CLV 12M])
+Segment Churn Risk = AVERAGE(segment_summary[Average Churn Probability])
+Segment Customers = SUM(segment_summary[Customers])
+
+// [campaign_summary]
+Campaign Budget = SUM(campaign_summary[Allocated Budget])
+Campaign Expected Margin = SUM(campaign_summary[Expected Incremental Margin])
+
+// [risk_bands]
+Risk Band Customers = SUM(risk_bands[Customers])
+
+// [model_comparison]
+Model ROC-AUC = AVERAGE(model_comparison[ROC-AUC])
+Model PR-AUC = AVERAGE(model_comparison[PR-AUC])
+
+// [shap_importance]
+SHAP Importance = SUM(shap_importance[Mean Abs SHAP])
+SHAP Share = SUM(shap_importance[Importance Share])
+
+// [drift_monitoring]
+Average PSI = AVERAGE(drift_monitoring[PSI])

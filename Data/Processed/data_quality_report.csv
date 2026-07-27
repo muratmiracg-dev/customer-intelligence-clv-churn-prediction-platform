@@ -1,0 +1,11 @@
+check_name,status,passed
+customer_primary_key_unique,PASS,1
+product_primary_key_unique,PASS,1
+order_primary_key_unique,PASS,1
+order_line_primary_key_unique,PASS,1
+orders_customer_fk_valid,PASS,1
+order_lines_order_fk_valid,PASS,1
+interactions_customer_fk_valid,PASS,1
+order_revenue_nonnegative,PASS,1
+order_dates_in_range,PASS,1
+snapshot_features_valid,PASS,1
