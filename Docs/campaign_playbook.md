@@ -11,6 +11,11 @@
 7. Allocate budget within the portfolio cap.
 8. Track outcomes through a controlled experiment.
 
+Before decisioning starts, the pipeline fails closed when customer identifiers are null or
+duplicated, consent is not binary, model percentiles or probabilities fall outside the finite
+0-to-1 range, or the campaign budget is negative or non-finite. These controls prevent
+many-to-many joins and malformed scores from silently duplicating contacts or distorting spend.
+
 ## Recommended Actions
 
 | Action | Intended Customer | Typical Objective |
@@ -50,4 +55,3 @@ Every operational campaign should include:
 - incremental margin, not gross response alone;
 - customer-experience and complaint monitoring;
 - post-campaign model and segment analysis.
-
