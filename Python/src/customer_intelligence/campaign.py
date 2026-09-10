@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from numbers import Real
+
 import numpy as np
 import pandas as pd
 
@@ -24,6 +26,48 @@ BASE_RESPONSE = {
     "Nurture": 0.11,
     "Suppress": 0.0,
 }
+
+
+def _validate_campaign_inputs(
+    production_snapshot: pd.DataFrame,
+    rfm: pd.DataFrame,
+    clv_scores: pd.DataFrame,
+    churn_scores: pd.DataFrame,
+    budget: float,
+) -> None:
+    if isinstance(budget, bool) or not isinstance(budget, Real) or not np.isfinite(budget):
+        raise ValueError("Campaign budget must be a finite number")
+    if budget < 0:
+        raise ValueError("Campaign budget must be non-negative")
+
+    inputs = {
+        "production_snapshot": production_snapshot,
+        "rfm": rfm,
+        "clv_scores": clv_scores,
+        "churn_scores": churn_scores,
+    }
+    for name, input_frame in inputs.items():
+        if "customer_id" not in input_frame:
+            raise ValueError(f"{name} must contain customer_id")
+        if input_frame["customer_id"].isna().any():
+            raise ValueError(f"{name} contains null customer_id values")
+        if input_frame["customer_id"].duplicated().any():
+            raise ValueError(f"{name} must contain one row per customer_id")
+
+    consent = production_snapshot["marketing_consent"]
+    if consent.isna().any() or not consent.isin([0, 1, False, True]).all():
+        raise ValueError("marketing_consent must contain only 0 or 1")
+
+    bounded_scores = {
+        "clv_percentile": clv_scores["clv_percentile"],
+        "churn_probability": churn_scores["churn_probability"],
+        "risk_percentile": churn_scores["risk_percentile"],
+    }
+    for name, scores in bounded_scores.items():
+        if not pd.api.types.is_numeric_dtype(scores):
+            raise ValueError(f"{name} must be numeric")
+        if not np.isfinite(scores).all() or not scores.between(0, 1).all():
+            raise ValueError(f"{name} must contain finite values between 0 and 1")
 
 
 def _assign_action(row: pd.Series) -> str:
@@ -53,6 +97,7 @@ def recommend_campaigns(
     churn_scores: pd.DataFrame,
     budget: float = CONFIG.campaign_budget,
 ) -> tuple[pd.DataFrame, pd.DataFrame]:
+    _validate_campaign_inputs(production_snapshot, rfm, clv_scores, churn_scores, budget)
     frame = (
         production_snapshot[
             [
@@ -152,4 +197,3 @@ def recommend_campaigns(
     return frame.sort_values("priority_score", ascending=False), summary.sort_values(
         "expected_incremental_margin", ascending=False
     )
-
