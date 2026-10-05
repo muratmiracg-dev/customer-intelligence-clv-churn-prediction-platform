@@ -437,8 +437,18 @@ def train_clv_models(
 def population_stability_index(
     reference: pd.Series, current: pd.Series, bins: int = 10
 ) -> float:
-    reference = pd.to_numeric(reference, errors="coerce").fillna(0)
-    current = pd.to_numeric(current, errors="coerce").fillna(0)
+    if isinstance(bins, bool) or not isinstance(bins, int) or bins < 2:
+        raise ValueError("bins must be an integer greater than or equal to 2")
+    reference = pd.to_numeric(reference, errors="coerce")
+    current = pd.to_numeric(current, errors="coerce")
+    if reference.empty or current.empty:
+        raise ValueError("PSI requires non-empty reference and current samples")
+    if reference.isna().any() or current.isna().any():
+        raise ValueError("PSI samples must contain only finite numeric values")
+    if not np.isfinite(reference.to_numpy()).all() or not np.isfinite(
+        current.to_numpy()
+    ).all():
+        raise ValueError("PSI samples must contain only finite numeric values")
     boundaries = np.unique(
         np.quantile(reference, np.linspace(0, 1, bins + 1))
     )
@@ -473,4 +483,3 @@ def build_drift_report(
             }
         )
     return pd.DataFrame(rows).sort_values("psi", ascending=False)
-
