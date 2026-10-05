@@ -3,7 +3,11 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
+import numpy as np
 import pandas as pd
+import pytest
+
+from customer_intelligence.modeling import population_stability_index
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
@@ -38,8 +42,24 @@ def test_drift_report_has_statuses(processed_dir: Path) -> None:
     assert drift["psi"].ge(0).all()
 
 
+@pytest.mark.parametrize(
+    ("reference", "current", "bins"),
+    [
+        (pd.Series(dtype=float), pd.Series([1.0]), 10),
+        (pd.Series([1.0, np.nan]), pd.Series([1.0, 2.0]), 10),
+        (pd.Series([1.0, 2.0]), pd.Series([1.0, np.inf]), 10),
+        (pd.Series([1.0, 2.0]), pd.Series([1.0, 2.0]), 1),
+        (pd.Series([1.0, 2.0]), pd.Series([1.0, 2.0]), True),
+    ],
+)
+def test_psi_rejects_invalid_monitoring_inputs(
+    reference: pd.Series, current: pd.Series, bins: int
+) -> None:
+    with pytest.raises(ValueError):
+        population_stability_index(reference, current, bins)
+
+
 def test_fairness_audit_has_required_groups(processed_dir: Path) -> None:
     fairness = pd.read_csv(processed_dir / "fairness_audit.csv")
     assert {"region", "age_band"}.issubset(set(fairness["audit_attribute"]))
     assert fairness["true_positive_rate"].between(0, 1).all()
-

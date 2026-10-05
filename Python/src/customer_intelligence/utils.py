@@ -42,13 +42,13 @@ def write_json(payload: dict[str, Any], path: Path) -> None:
 
     class Encoder(json.JSONEncoder):
         def default(self, obj: Any) -> Any:
-            if isinstance(obj, (np.integer,)):
+            if isinstance(obj, np.integer):
                 return int(obj)
-            if isinstance(obj, (np.floating,)):
+            if isinstance(obj, np.floating):
                 return float(obj)
-            if isinstance(obj, (np.ndarray,)):
+            if isinstance(obj, np.ndarray):
                 return obj.tolist()
-            if isinstance(obj, (pd.Timestamp,)):
+            if isinstance(obj, pd.Timestamp):
                 return obj.isoformat()
             return super().default(obj)
 
@@ -58,4 +58,3 @@ def write_json(payload: dict[str, Any], path: Path) -> None:
 def safe_divide(numerator: pd.Series, denominator: pd.Series) -> pd.Series:
     denominator = denominator.replace(0, np.nan)
     return numerator.div(denominator).replace([np.inf, -np.inf], np.nan).fillna(0.0)
-
