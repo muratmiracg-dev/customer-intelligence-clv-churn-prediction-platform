@@ -13,9 +13,7 @@ def _quantile_score(series: pd.Series, higher_is_better: bool = True) -> pd.Seri
 
 
 def _rfm_segment(row: pd.Series) -> str:
-    r, f, m = int(row["recency_score"]), int(row["frequency_score"]), int(
-        row["monetary_score"]
-    )
+    r, f, m = int(row["recency_score"]), int(row["frequency_score"]), int(row["monetary_score"])
     if r >= 4 and f >= 4 and m >= 4:
         return "Champions"
     if r >= 3 and f >= 4:
@@ -41,12 +39,21 @@ def calculate_rfm(
     customers: pd.DataFrame, orders: pd.DataFrame, analysis_date: str | pd.Timestamp
 ) -> pd.DataFrame:
     analysis_ts = pd.Timestamp(analysis_date)
+    if pd.isna(analysis_ts):
+        raise ValueError("analysis_date must be a valid date")
+    if customers["customer_id"].isna().any() or not customers["customer_id"].is_unique:
+        raise ValueError("customers must contain unique, non-null customer_id values")
     orders = orders.copy()
-    orders["order_date"] = pd.to_datetime(orders["order_date"])
+    orders["order_date"] = pd.to_datetime(orders["order_date"], errors="coerce")
+    if orders["order_date"].isna().any():
+        raise ValueError("orders.order_date must contain valid dates")
+    amounts = orders[["net_revenue", "gross_margin"]].apply(pd.to_numeric, errors="coerce")
+    if not np.isfinite(amounts.to_numpy()).all():
+        raise ValueError("order financial amounts must be finite numeric values")
+    orders[["net_revenue", "gross_margin"]] = amounts
     window_start = analysis_ts - pd.Timedelta(days=364)
     order_window = orders[
-        (orders["order_date"] >= window_start)
-        & (orders["order_date"] <= analysis_ts)
+        (orders["order_date"] >= window_start) & (orders["order_date"] <= analysis_ts)
     ].copy()
     aggregate = order_window.groupby("customer_id", as_index=False).agg(
         last_order_date=("order_date", "max"),
@@ -92,21 +99,17 @@ def calculate_cohort_retention(
         + frame["order_month"].dt.month
         - frame["cohort_month"].dt.month
     )
-    active = frame.groupby(
-        ["cohort_month", "cohort_index"], as_index=False
-    ).agg(active_customers=("customer_id", "nunique"))
+    active = frame.groupby(["cohort_month", "cohort_index"], as_index=False).agg(
+        active_customers=("customer_id", "nunique")
+    )
     cohort_sizes = first_purchase.groupby("cohort_month", as_index=False).agg(
         cohort_size=("customer_id", "nunique")
     )
     long = active.merge(cohort_sizes, on="cohort_month", how="left")
-    long["retention_rate"] = safe_divide(
-        long["active_customers"], long["cohort_size"]
-    )
+    long["retention_rate"] = safe_divide(long["active_customers"], long["cohort_size"])
     long["cohort_month"] = long["cohort_month"].astype(str)
     matrix = (
-        long.pivot(
-            index="cohort_month", columns="cohort_index", values="retention_rate"
-        )
+        long.pivot(index="cohort_month", columns="cohort_index", values="retention_rate")
         .sort_index()
         .reset_index()
     )
@@ -117,9 +120,7 @@ def calculate_cohort_retention(
     return long.sort_values(["cohort_month", "cohort_index"]), matrix
 
 
-def calculate_monthly_metrics(
-    customers: pd.DataFrame, orders: pd.DataFrame
-) -> pd.DataFrame:
+def calculate_monthly_metrics(customers: pd.DataFrame, orders: pd.DataFrame) -> pd.DataFrame:
     orders = orders.copy()
     orders["month"] = pd.to_datetime(orders["order_date"]).dt.to_period("M").dt.to_timestamp()
     customer_month = orders.groupby(["month", "customer_id"], as_index=False).agg(
@@ -133,9 +134,11 @@ def calculate_monthly_metrics(
         gross_margin=("gross_margin", "sum"),
         returned_orders=("returned_flag", "sum"),
     )
-    repeat = customer_month[customer_month["customer_orders"] >= 2].groupby(
-        "month", as_index=False
-    ).agg(repeat_customers=("customer_id", "nunique"))
+    repeat = (
+        customer_month[customer_month["customer_orders"] >= 2]
+        .groupby("month", as_index=False)
+        .agg(repeat_customers=("customer_id", "nunique"))
+    )
     customers = customers.copy()
     customers["month"] = (
         pd.to_datetime(customers["acquisition_date"]).dt.to_period("M").dt.to_timestamp()
@@ -148,12 +151,8 @@ def calculate_monthly_metrics(
         .merge(new_customers, on="month", how="left")
         .fillna({"repeat_customers": 0, "new_customers": 0})
     )
-    result["average_order_value"] = safe_divide(
-        result["net_revenue"], result["orders"]
-    )
-    result["gross_margin_pct"] = safe_divide(
-        result["gross_margin"], result["net_revenue"]
-    )
+    result["average_order_value"] = safe_divide(result["net_revenue"], result["orders"])
+    result["gross_margin_pct"] = safe_divide(result["gross_margin"], result["net_revenue"])
     result["repeat_customer_rate"] = safe_divide(
         result["repeat_customers"], result["active_customers"]
     )
@@ -175,4 +174,3 @@ def summarize_segments(customer_360: pd.DataFrame) -> pd.DataFrame:
     summary["customer_share"] = summary["customers"] / summary["customers"].sum()
     summary["revenue_share"] = summary["revenue_12m"] / summary["revenue_12m"].sum()
     return summary.sort_values("predicted_clv_12m", ascending=False)
-
