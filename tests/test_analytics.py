@@ -2,7 +2,11 @@ from __future__ import annotations
 
 from pathlib import Path
 
+import numpy as np
 import pandas as pd
+import pytest
+
+from customer_intelligence.analytics import calculate_rfm
 
 
 def test_rfm_scores_are_valid(processed_dir: Path) -> None:
@@ -40,3 +44,19 @@ def test_executive_kpis_are_populated(processed_dir: Path) -> None:
     assert len(kpis) >= 15
     assert kpis["value"].notna().all()
 
+
+def test_rfm_rejects_ambiguous_customer_and_financial_inputs() -> None:
+    customers = pd.DataFrame({"customer_id": ["C1", "C1"], "acquisition_date": ["2025-01-01"] * 2})
+    orders = pd.DataFrame(
+        {
+            "customer_id": ["C1"],
+            "order_id": ["O1"],
+            "order_date": ["2026-01-01"],
+            "net_revenue": [100.0],
+            "gross_margin": [30.0],
+        }
+    )
+    with pytest.raises(ValueError, match="unique, non-null"):
+        calculate_rfm(customers, orders, "2026-02-01")
+    with pytest.raises(ValueError, match="finite numeric"):
+        calculate_rfm(customers.iloc[:1], orders.assign(net_revenue=np.inf), "2026-02-01")

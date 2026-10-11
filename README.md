@@ -1,5 +1,7 @@
 # Customer Intelligence, CLV & Churn Prediction Platform
 
+RFM processing fails closed on duplicate or missing customer identifiers, invalid order dates, and non-finite financial amounts so malformed source data cannot silently distort value segments.
+
 ![Executive Customer Intelligence Overview](Images/executive-overview.png)
 
 An end-to-end customer analytics and decision-intelligence portfolio project that transforms four years of synthetic retail data into customer segmentation, cohort retention, predictive customer lifetime value, calibrated churn risk, SHAP explanations and economically governed next-best-action recommendations.
