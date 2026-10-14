@@ -7,7 +7,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from customer_intelligence.modeling import population_stability_index
+from customer_intelligence.modeling import _fairness_audit, population_stability_index
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
@@ -63,3 +63,27 @@ def test_fairness_audit_has_required_groups(processed_dir: Path) -> None:
     fairness = pd.read_csv(processed_dir / "fairness_audit.csv")
     assert {"region", "age_band"}.issubset(set(fairness["audit_attribute"]))
     assert fairness["true_positive_rate"].between(0, 1).all()
+
+
+@pytest.mark.parametrize(
+    ("probabilities", "threshold", "mutation"),
+    [
+        (np.array([0.2]), 0.5, lambda frame: frame),
+        (np.array([0.2, np.nan]), 0.5, lambda frame: frame),
+        (np.array([0.2, 1.2]), 0.5, lambda frame: frame),
+        (np.array([0.2, 0.8]), True, lambda frame: frame),
+        (np.array([0.2, 0.8]), 0.5, lambda frame: frame.assign(churn_90d=2)),
+        (np.array([0.2, 0.8]), 0.5, lambda frame: frame.assign(region=" ")),
+    ],
+)
+def test_fairness_audit_rejects_invalid_inputs(probabilities, threshold, mutation) -> None:
+    frame = pd.DataFrame(
+        {
+            "customer_id": ["C1", "C2"],
+            "region": ["A", "B"],
+            "age_band": ["18-29", "30-39"],
+            "churn_90d": [0, 1],
+        }
+    )
+    with pytest.raises(ValueError):
+        _fairness_audit(mutation(frame), probabilities, threshold)
