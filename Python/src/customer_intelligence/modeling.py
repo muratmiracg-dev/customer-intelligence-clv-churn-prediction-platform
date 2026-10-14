@@ -134,6 +134,26 @@ def _fairness_audit(
     probabilities: np.ndarray,
     threshold: float,
 ) -> pd.DataFrame:
+    required = {"customer_id", "region", "age_band", "churn_90d"}
+    missing = required - set(test_frame.columns)
+    if missing:
+        raise ValueError(f"fairness audit is missing columns: {sorted(missing)}")
+    probabilities = np.asarray(probabilities)
+    if probabilities.ndim != 1 or len(probabilities) != len(test_frame):
+        raise ValueError("fairness probabilities must align one-to-one with customers")
+    if not np.isfinite(probabilities).all() or not (
+        (probabilities >= 0) & (probabilities <= 1)
+    ).all():
+        raise ValueError("fairness probabilities must be finite and between 0 and 1")
+    if isinstance(threshold, bool) or not np.isfinite(threshold) or not 0 < threshold < 1:
+        raise ValueError("fairness threshold must be strictly between 0 and 1")
+    if not test_frame["churn_90d"].isin({0, 1}).all():
+        raise ValueError("fairness outcomes must contain only binary 0/1 values")
+    if test_frame[["region", "age_band"]].isna().any().any() or any(
+        test_frame[column].astype(str).str.strip().eq("").any()
+        for column in ("region", "age_band")
+    ):
+        raise ValueError("fairness groups must be populated")
     scored = test_frame[
         ["customer_id", "region", "age_band", "churn_90d"]
     ].copy()

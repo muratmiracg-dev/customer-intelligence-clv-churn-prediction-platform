@@ -26,6 +26,8 @@ converted to zero and understating drift.
 - material ROC-AUC, PR-AUC or lift decline: investigate and consider retraining;
 - calibration deterioration: recalibrate before changing risk thresholds;
 - fairness-gap deterioration: pause affected use case and complete root-cause review;
+- fairness diagnostics fail closed on misaligned or non-finite probabilities,
+  non-binary outcomes, invalid thresholds, and missing protected-group labels;
 - failed primary or foreign-key controls: stop downstream publication.
 
 ## Retraining Triggers
