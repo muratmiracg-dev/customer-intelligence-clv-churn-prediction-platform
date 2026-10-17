@@ -22,9 +22,7 @@ def campaign_inputs() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.Data
             "sessions_90d": [10, 4],
         }
     )
-    rfm = pd.DataFrame(
-        {"customer_id": ["C001", "C002"], "rfm_segment": ["Champions", "Promising"]}
-    )
+    rfm = pd.DataFrame({"customer_id": ["C001", "C002"], "rfm_segment": ["Champions", "Promising"]})
     clv_scores = pd.DataFrame(
         {
             "customer_id": ["C001", "C002"],
@@ -64,6 +62,18 @@ def test_recommend_campaigns_rejects_duplicate_customers(
             duplicate_clv_scores,
             churn_scores,
         )
+
+
+@pytest.mark.parametrize("frame_index", [1, 2, 3])
+def test_recommend_campaigns_rejects_misaligned_customer_populations(
+    campaign_inputs: tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame],
+    frame_index: int,
+) -> None:
+    inputs = [frame.copy() for frame in campaign_inputs]
+    inputs[frame_index] = inputs[frame_index].iloc[[0]].copy()
+
+    with pytest.raises(ValueError, match="exactly match production_snapshot"):
+        recommend_campaigns(*inputs)
 
 
 @pytest.mark.parametrize(
