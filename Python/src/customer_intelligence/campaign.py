@@ -54,6 +54,11 @@ def _validate_campaign_inputs(
         if input_frame["customer_id"].duplicated().any():
             raise ValueError(f"{name} must contain one row per customer_id")
 
+    expected_customers = set(production_snapshot["customer_id"])
+    for name, input_frame in inputs.items():
+        if set(input_frame["customer_id"]) != expected_customers:
+            raise ValueError(f"{name} customer_id values must exactly match production_snapshot")
+
     consent = production_snapshot["marketing_consent"]
     if consent.isna().any() or not consent.isin([0, 1, False, True]).all():
         raise ValueError("marketing_consent must contain only 0 or 1")
@@ -118,9 +123,7 @@ def recommend_campaigns(
     )
     frame["recommended_action"] = frame.apply(_assign_action, axis=1)
     frame["contact_cost"] = frame["recommended_action"].map(CAMPAIGN_COSTS).fillna(0)
-    engagement_norm = (
-        frame["sessions_90d"].rank(pct=True).fillna(0).clip(0, 1)
-    )
+    engagement_norm = frame["sessions_90d"].rank(pct=True).fillna(0).clip(0, 1)
     response = frame["recommended_action"].map(BASE_RESPONSE).fillna(0)
     response += 0.08 * engagement_norm
     response += 0.06 * frame["clv_percentile"].fillna(0)
@@ -141,9 +144,7 @@ def recommend_campaigns(
         * margin_rate
         * (1.18 + 0.22 * frame["clv_percentile"].fillna(0))
     )
-    frame["expected_incremental_margin"] = (
-        expected_gross_margin - frame["contact_cost"]
-    )
+    frame["expected_incremental_margin"] = expected_gross_margin - frame["contact_cost"]
     frame["expected_roi"] = np.where(
         frame["contact_cost"] > 0,
         frame["expected_incremental_margin"] / frame["contact_cost"],
@@ -167,9 +168,7 @@ def recommend_campaigns(
     ].sort_values(["priority_score", "expected_roi"], ascending=False)
     eligible = eligible.copy()
     eligible["cumulative_budget"] = eligible["contact_cost"].cumsum()
-    selected_ids = set(
-        eligible.loc[eligible["cumulative_budget"] <= budget, "customer_id"]
-    )
+    selected_ids = set(eligible.loc[eligible["cumulative_budget"] <= budget, "customer_id"])
     frame["selected_for_campaign"] = frame["customer_id"].isin(selected_ids).astype(int)
     frame["allocated_budget"] = np.where(
         frame["selected_for_campaign"].eq(1), frame["contact_cost"], 0
@@ -179,9 +178,7 @@ def recommend_campaigns(
         frame["expected_incremental_margin"],
         0,
     )
-    frame["expected_roi"] = np.where(
-        frame["selected_for_campaign"].eq(1), frame["expected_roi"], 0
-    )
+    frame["expected_roi"] = np.where(frame["selected_for_campaign"].eq(1), frame["expected_roi"], 0)
     summary = frame.groupby("recommended_action", as_index=False).agg(
         eligible_customers=("customer_id", "nunique"),
         selected_customers=("selected_for_campaign", "sum"),
