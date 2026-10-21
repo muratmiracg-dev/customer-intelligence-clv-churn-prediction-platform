@@ -7,6 +7,7 @@ import pandas as pd
 import pytest
 
 from customer_intelligence.analytics import calculate_rfm
+from customer_intelligence.features import build_customer_snapshot
 
 
 def test_rfm_scores_are_valid(processed_dir: Path) -> None:
@@ -60,3 +61,11 @@ def test_rfm_rejects_ambiguous_customer_and_financial_inputs() -> None:
         calculate_rfm(customers, orders, "2026-02-01")
     with pytest.raises(ValueError, match="finite numeric"):
         calculate_rfm(customers.iloc[:1], orders.assign(net_revenue=np.inf), "2026-02-01")
+
+
+@pytest.mark.parametrize("horizon", [True, 0, -1, 3661, 90.5, "90"])
+def test_snapshot_rejects_invalid_horizon_before_processing(horizon: object) -> None:
+    with pytest.raises((TypeError, ValueError), match="horizon_days"):
+        build_customer_snapshot(
+            pd.DataFrame(), pd.DataFrame(), pd.DataFrame(), "2026-01-01", horizon
+        )  # type: ignore[arg-type]
