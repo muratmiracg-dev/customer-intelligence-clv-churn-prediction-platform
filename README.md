@@ -3,6 +3,7 @@
 Campaign allocation fails closed unless RFM, CLV, churn, and production snapshots contain
 exactly the same unique customer population. This prevents incomplete model outputs from
 silently producing partially scored campaign portfolios.
+Snapshot target horizons are restricted to positive integer day counts (maximum ten years), preventing ambiguous boolean, fractional, or unbounded target windows.
 RFM processing fails closed on duplicate or missing customer identifiers, invalid order dates, and non-finite financial amounts so malformed source data cannot silently distort value segments.
 
 ![Executive Customer Intelligence Overview](Images/executive-overview.png)
