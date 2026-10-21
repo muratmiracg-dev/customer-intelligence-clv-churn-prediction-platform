@@ -17,7 +17,15 @@ def build_customer_snapshot(
     include_clv_target: bool = False,
 ) -> pd.DataFrame:
     """Create leakage-safe customer features as known at a point in time."""
+    if isinstance(horizon_days, (bool, np.bool_)) or not isinstance(
+        horizon_days, (int, np.integer)
+    ):
+        raise TypeError("horizon_days must be an integer")
+    if horizon_days < 1 or horizon_days > 3660:
+        raise ValueError("horizon_days must be between 1 and 3660")
     cutoff_ts = pd.Timestamp(cutoff).normalize()
+    if pd.isna(cutoff_ts):
+        raise ValueError("cutoff must be a valid date")
     customers = customers.copy()
     customers["acquisition_date"] = pd.to_datetime(customers["acquisition_date"])
     orders = orders.copy()
@@ -38,9 +46,7 @@ def build_customer_snapshot(
         ]
     ].copy()
     snapshot["snapshot_date"] = cutoff_ts
-    snapshot["tenure_days"] = (
-        cutoff_ts - snapshot["acquisition_date"]
-    ).dt.days.clip(lower=0)
+    snapshot["tenure_days"] = (cutoff_ts - snapshot["acquisition_date"]).dt.days.clip(lower=0)
 
     history = orders[orders["order_date"] <= cutoff_ts].copy()
     window_start = cutoff_ts - pd.Timedelta(days=364)
@@ -53,9 +59,7 @@ def build_customer_snapshot(
         lifetime_margin=("gross_margin", "sum"),
     )
     snapshot = snapshot.merge(lifetime_agg, on="customer_id", how="left")
-    snapshot["recency_days"] = (
-        cutoff_ts - pd.to_datetime(snapshot["last_order_date"])
-    ).dt.days
+    snapshot["recency_days"] = (cutoff_ts - pd.to_datetime(snapshot["last_order_date"])).dt.days
     snapshot["recency_days"] = snapshot["recency_days"].fillna(
         snapshot["tenure_days"].clip(lower=1) + 365
     )
@@ -107,9 +111,7 @@ def build_customer_snapshot(
     )
 
     interactions_hist = interactions[interactions["month"] <= cutoff_ts].copy()
-    interactions_12m = interactions_hist[
-        interactions_hist["month"] >= window_start
-    ].copy()
+    interactions_12m = interactions_hist[interactions_hist["month"] >= window_start].copy()
     interactions_90d = interactions_hist[
         interactions_hist["month"] >= cutoff_ts - pd.Timedelta(days=89)
     ].copy()
