@@ -165,7 +165,11 @@ def recommend_campaigns(
         (frame["contact_cost"] > 0)
         & (frame["expected_incremental_margin"] > 0)
         & (frame["marketing_consent"] == 1)
-    ].sort_values(["priority_score", "expected_roi"], ascending=False)
+    ].sort_values(
+            ["priority_score", "expected_roi", "customer_id"],
+            ascending=[False, False, True],
+            kind="mergesort",
+        )
     eligible = eligible.copy()
     eligible["cumulative_budget"] = eligible["contact_cost"].cumsum()
     selected_ids = set(eligible.loc[eligible["cumulative_budget"] <= budget, "customer_id"])
