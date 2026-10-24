@@ -93,6 +93,26 @@ def test_recommend_campaigns_rejects_invalid_model_scores(
         recommend_campaigns(*inputs)
 
 
+def test_campaign_allocation_is_stable_when_equal_priority_rows_are_reordered(
+    campaign_inputs: tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame],
+) -> None:
+    customer_ids = ["C001", "C003", "C004", "C005"]
+    tied_inputs = []
+    for frame in campaign_inputs:
+        rows = pd.concat([frame.iloc[[0]].copy() for _ in customer_ids], ignore_index=True)
+        rows["customer_id"] = customer_ids
+        tied_inputs.append(rows)
+
+    first, _ = recommend_campaigns(*tied_inputs, budget=95.0)
+    reordered = [frame.iloc[::-1].reset_index(drop=True) for frame in tied_inputs]
+    second, _ = recommend_campaigns(*reordered, budget=95.0)
+
+    selected_first = sorted(first.loc[first["selected_for_campaign"].eq(1), "customer_id"])
+    selected_second = sorted(second.loc[second["selected_for_campaign"].eq(1), "customer_id"])
+    assert selected_first == ["C001"]
+    assert selected_second == selected_first
+
+
 def test_recommend_campaigns_keeps_allocation_within_budget(
     campaign_inputs: tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame],
 ) -> None:
