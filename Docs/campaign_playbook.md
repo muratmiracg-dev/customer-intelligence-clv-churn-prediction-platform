@@ -55,3 +55,7 @@ Every operational campaign should include:
 - incremental margin, not gross response alone;
 - customer-experience and complaint monitoring;
 - post-campaign model and segment analysis.
+
+## Deterministic budget allocation
+
+Eligible customers are ordered by priority score, expected ROI, then ascending customer ID. The final key is an explicit tie-breaker so equal-ranked customers receive the same budget decision even when source rows arrive in a different order. Consent and positive expected incremental margin remain mandatory eligibility gates.
