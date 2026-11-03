@@ -10,7 +10,10 @@ pytest>=8.3,<9
 pytest-cov>=5.0,<6
 reportlab>=4.2
 ruff>=0.7
-scikit-learn>=1.5
+# Models/*.joblib were pickled with scikit-learn 1.9.0. scikit-learn does not guarantee that
+# pickled estimators load correctly in other versions, so keep this pin in step with the
+# committed models. Retrain and re-export them before changing it.
+scikit-learn==1.9.0
 scipy>=1.13
 seaborn>=0.13
 shap>=0.46

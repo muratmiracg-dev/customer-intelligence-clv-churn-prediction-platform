@@ -1,5 +1,14 @@
 # Changelog
 
+## Unreleased
+
+- Pinned `scikit-learn==1.9.0`, the version that pickled `Models/churn_champion.joblib` and
+  `Models/clv_champion.joblib`. With the previous `>=1.5` bound, CI and Docker installed 1.9.1, and
+  every API start-up emitted scikit-learn's `InconsistentVersionWarning` ("might lead to breaking
+  code or invalid results").
+- Added `tests/test_model_artifacts.py`, which fails if the installed scikit-learn differs from the
+  version recorded in the committed models and checks that both bundles still predict.
+
 ## 1.0.0 — 2026-07-27
 
 - Added deterministic four-year synthetic customer, product, order, interaction and campaign data.
