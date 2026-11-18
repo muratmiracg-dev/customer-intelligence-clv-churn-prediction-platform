@@ -43,6 +43,22 @@ jobs:
               assert connection.execute("SELECT COUNT(*) FROM vw_campaign_portfolio").fetchone()[0] > 0
           PY
 
+      - name: Keep a copy of the committed outputs
+        run: |
+          mkdir -p "$RUNNER_TEMP/committed/Data"
+          cp -r Data/Raw Data/Processed "$RUNNER_TEMP/committed/Data/"
+          cp -r Models "$RUNNER_TEMP/committed/Models"
+
+      # The tests above read the committed tables; this proves the pipeline still
+      # produces them (CSV/JSON values within relative 1e-9).
+      - name: Rebuild pipeline and compare with committed outputs
+        env:
+          PYTHONPATH: Python/src
+          MPLCONFIGDIR: /tmp/customer-intelligence-mpl
+        run: |
+          python -m customer_intelligence.pipeline
+          python scripts/compare_outputs.py "$RUNNER_TEMP/committed"
+
       - name: Upload coverage
         uses: actions/upload-artifact@v4
         with:

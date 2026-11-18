@@ -22,11 +22,11 @@ The solution is designed as a complete analytical product rather than a standalo
 | Active customers, last 12 months | 4,067 |
 | Net revenue, last 12 months | TRY 55.6M |
 | Predicted 12-month CLV | TRY 11.9M |
-| High / critical-risk customers | 2,682 |
-| Revenue at risk | TRY 6.0M |
+| High / critical-risk customers | 2,683 |
+| Revenue at risk | TRY 5.9M |
 | Churn champion ROC-AUC / PR-AUC | 0.867 / 0.908 |
 | Lift in top 10% | 1.77x |
-| CLV champion MAE / R² | TRY 1,258 / 0.564 |
+| CLV champion MAE / R² | TRY 1,259 / 0.564 |
 | Prioritized campaign targets | 3,501 |
 | Allocated campaign budget | TRY 236K |
 | Expected incremental margin | TRY 547K |
@@ -96,24 +96,24 @@ The resulting actions include VIP Experience, Retain & Reward, Onboarding, Cross
 | Metric | Holdout Result |
 |---|---:|
 | Model | Random Forest, calibrated |
-| ROC-AUC | 0.8666 |
-| PR-AUC | 0.9083 |
+| ROC-AUC | 0.8668 |
+| PR-AUC | 0.9082 |
 | Brier score | 0.1455 |
-| F1 | 0.7917 |
-| Precision | 0.8085 |
-| Recall | 0.7755 |
+| F1 | 0.7893 |
+| Precision | 0.7907 |
+| Recall | 0.7880 |
 | Lift at top 10% | 1.7738x |
-| Operating threshold | 0.33 |
+| Operating threshold | 0.32 |
 
 ### CLV Champion
 
 | Metric | Holdout Result |
 |---|---:|
 | Model | Random Forest Regressor |
-| MAE | TRY 1,258.38 |
-| RMSE | TRY 2,151.56 |
-| R² | 0.5645 |
-| Spearman correlation | 0.7915 |
+| MAE | TRY 1,259.12 |
+| RMSE | TRY 2,153.06 |
+| R² | 0.5639 |
+| Spearman correlation | 0.7910 |
 
 ## Professional Deliverables
 
@@ -230,6 +230,10 @@ See [QA Report](Delivery/QA_Report.md), [Churn Model Card](Docs/model_card_churn
 
 ## Limitations
 
+- The Excel planner, decks, PDF report, Power BI and Tableau files are static exports of the
+  run before the November 2026 reproducibility fix; their figures differ slightly from
+  `Data/Processed` (for example 2,682 vs 2,683 high/critical-risk customers). `Data/`,
+  `Models/` and `SQL/` are the current source of truth and are rebuilt and compared in CI.
 - Data is synthetic and does not establish real-world commercial uplift.
 - Campaign economics are expected-value estimates and require controlled experiments.
 - CLV represents a 12-month gross-margin horizon, not an unlimited customer lifetime.

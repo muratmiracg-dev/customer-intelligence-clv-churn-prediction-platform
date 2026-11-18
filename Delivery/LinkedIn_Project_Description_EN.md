@@ -8,7 +8,7 @@ Description:
 
 - Engineered reusable snapshots for RFM segmentation, M0–M12 cohort retention, 90-day churn and 12-month predictive CLV. Used time-based validation to prevent leakage and compared multiple classification and regression models.
 
-- Selected a calibrated Random Forest churn champion with 0.867 ROC-AUC, 0.908 PR-AUC and 1.77x top-decile lift. Built a Random Forest CLV champion with TRY 1,258 MAE, 0.564 R² and 0.792 Spearman correlation.
+- Selected a calibrated Random Forest churn champion with 0.867 ROC-AUC, 0.908 PR-AUC and 1.77x top-decile lift. Built a Random Forest CLV champion with TRY 1,259 MAE, 0.564 R² and 0.791 Spearman correlation.
 
 - Added SHAP explanations, probability calibration, PSI drift monitoring, region/age-band fairness diagnostics, model cards and automated data-quality gates.
 

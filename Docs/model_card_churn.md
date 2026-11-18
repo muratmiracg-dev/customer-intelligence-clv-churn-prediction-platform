@@ -27,12 +27,12 @@ The model is evaluated on outcomes after the holdout cutoff. Features contain on
 
 | Metric | Result |
 |---|---:|
-| ROC-AUC | 0.8666 |
-| PR-AUC | 0.9083 |
+| ROC-AUC | 0.8668 |
+| PR-AUC | 0.9082 |
 | Brier score | 0.1455 |
-| F1 | 0.7917 |
-| Precision | 0.8085 |
-| Recall | 0.7755 |
+| F1 | 0.7893 |
+| Precision | 0.7907 |
+| Recall | 0.7880 |
 | Lift at top 10% | 1.7738x |
 | Recall in top 20% | 0.3545 |
 

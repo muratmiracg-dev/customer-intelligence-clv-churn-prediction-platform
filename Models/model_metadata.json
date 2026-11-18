@@ -11,7 +11,7 @@
   "clv_horizon_days": 365,
   "churn_champion": "Random Forest (calibrated champion)",
   "clv_champion": "Random Forest Regressor",
-  "churn_threshold": 0.32999999999999996,
+  "churn_threshold": 0.32,
   "feature_columns": [
     "recency_days",
     "frequency_12m",
@@ -35,9 +35,9 @@
     "sample_size": 60,
     "background_size": 24,
     "feature_count": 16,
-    "additivity_mean_absolute_error": 2.4609943712524305e-16
+    "additivity_mean_absolute_error": 2.590520390792032e-16
   },
-  "python_version": "3.12.13",
+  "python_version": "3.12.3",
   "sklearn_version": "1.9.0",
   "generated_rows": {
     "dim_customers": 6000,

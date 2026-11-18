@@ -8,7 +8,7 @@ Açıklama:
 
 - RFM segmentasyonu, M0–M12 cohort analizi, 90 günlük churn ve 12 aylık tahmine dayalı CLV için yeniden kullanılabilir müşteri kesitleri ürettim. Gelecek bilgisi sızıntısını önlemek için zaman bazlı validasyon uyguladım.
 
-- Churn için 0,867 ROC-AUC, 0,908 PR-AUC ve ilk %10'da 1,77x lift sağlayan kalibre Random Forest; CLV için 1.258 TRY MAE, 0,564 R² ve 0,792 Spearman korelasyonuna sahip Random Forest Regressor seçtim.
+- Churn için 0,867 ROC-AUC, 0,908 PR-AUC ve ilk %10'da 1,77x lift sağlayan kalibre Random Forest; CLV için 1.259 TRY MAE, 0,564 R² ve 0,791 Spearman korelasyonuna sahip Random Forest Regressor seçtim.
 
 - SHAP açıklamaları, olasılık kalibrasyonu, PSI drift takibi, bölge/yaş bandı adalet kontrolleri, model kartları ve otomatik veri kalitesi kapıları ekledim.
 

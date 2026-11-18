@@ -25,10 +25,10 @@ Time-based holdout snapshot: 2024-12-31, with realized 2025 gross margin as the 
 
 | Metric | Result |
 |---|---:|
-| MAE | TRY 1,258.38 |
-| RMSE | TRY 2,151.56 |
-| R² | 0.5645 |
-| Spearman correlation | 0.7915 |
+| MAE | TRY 1,259.12 |
+| RMSE | TRY 2,153.06 |
+| R² | 0.5639 |
+| Spearman correlation | 0.7910 |
 
 Spearman correlation is important because the primary business use is value ranking and resource prioritization.
 

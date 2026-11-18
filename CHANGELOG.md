@@ -2,6 +2,17 @@
 
 ## Unreleased
 
+- Made the synthetic data reproducible. Each order's `primary_category` was
+  `max(set(categories), key=count)`, so ties were broken by string-hash order, which Python
+  randomises per process: every pipeline run produced different raw orders and therefore
+  different features, models, predictions and KPIs (three runs, three different
+  `fact_orders.csv` digests). Ties now go to the first category bought. Regenerated `Data/`,
+  `Models/` and `SQL/`; headline figures move slightly (high/critical-risk customers 2,682 ->
+  2,683, revenue at risk TRY 5.97M -> 5.93M, churn ROC-AUC 0.8666 -> 0.8668, operating
+  threshold 0.33 -> 0.32, CLV MAE TRY 1,258 -> 1,259). README, model cards and delivery notes
+  updated; the Excel, deck, PDF, Power BI and Tableau files are static exports of the earlier run.
+- CI now rebuilds the pipeline and compares every committed CSV/JSON value with the rebuild
+  (`scripts/compare_outputs.py`, relative tolerance 1e-9).
 - Pinned `scikit-learn==1.9.0`, the version that pickled `Models/churn_champion.joblib` and
   `Models/clv_champion.joblib`. With the previous `>=1.5` bound, CI and Docker installed 1.9.1, and
   every API start-up emitted scikit-learn's `InconsistentVersionWarning` ("might lead to breaking
