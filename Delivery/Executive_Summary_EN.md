@@ -6,7 +6,7 @@ The portfolio generated TRY 55.6M of net revenue and TRY 11.9M of predicted 12-m
 
 The calibrated Random Forest churn champion achieves 0.867 ROC-AUC, 0.908 PR-AUC and 1.77x lift in the highest-risk decile. The Random Forest CLV champion achieves TRY 1,259 MAE, 0.564 R² and 0.791 Spearman correlation on a time-based holdout.
 
-The decision engine does not treat risk as an automatic reason to spend. It combines customer value, consent, expected response and treatment cost. It prioritizes 3,501 customer actions, allocates TRY 236K and estimates TRY 547K of incremental margin.
+The decision engine does not treat risk as an automatic reason to spend. It combines customer value, consent, expected response and treatment cost. It prioritizes 3,501 customer actions, allocates TRY 237K and estimates TRY 547K of incremental margin.
 
 The complete solution includes Power BI, Excel, Tableau, SQL, FastAPI, Streamlit, bilingual executive presentations, a vector HD report, automated tests, data-quality gates, drift monitoring, fairness diagnostics and model documentation.
 

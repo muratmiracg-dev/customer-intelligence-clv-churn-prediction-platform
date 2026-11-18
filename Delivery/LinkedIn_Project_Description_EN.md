@@ -12,7 +12,7 @@ Description:
 
 - Added SHAP explanations, probability calibration, PSI drift monitoring, region/age-band fairness diagnostics, model cards and automated data-quality gates.
 
-- Designed a next-best-action engine combining churn risk, CLV, RFM, consent, expected response, treatment cost and budget constraints. Prioritized 3,501 customers with TRY 236K budget and TRY 547K expected incremental margin.
+- Designed a next-best-action engine combining churn risk, CLV, RFM, consent, expected response, treatment cost and budget constraints. Prioritized 3,501 customers with TRY 237K budget and TRY 547K expected incremental margin.
 
 - Delivered a 12-page Power BI PBIP, 24-sheet formula-driven Excel planner, Tableau workbook, SQLite database, FastAPI service, Streamlit app, 20-slide English/Turkish decks and a 12-page vector HD report.
 

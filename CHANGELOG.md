@@ -9,7 +9,7 @@
   `fact_orders.csv` digests). Ties now go to the first category bought. Regenerated `Data/`,
   `Models/` and `SQL/`; headline figures move slightly (high/critical-risk customers 2,682 ->
   2,683, revenue at risk TRY 5.97M -> 5.93M, churn ROC-AUC 0.8666 -> 0.8668, operating
-  threshold 0.33 -> 0.32, CLV MAE TRY 1,258 -> 1,259). README, model cards and delivery notes
+  threshold 0.33 -> 0.32, CLV MAE TRY 1,258 -> 1,259, campaign budget TRY 236.4K -> 236.5K). README, model cards and delivery notes
   updated; the Excel, deck, PDF, Power BI and Tableau files are static exports of the earlier run.
 - Seeded SHAP's permutation explainer. Without a seed the sampled permutations changed every
   run, so `shap_global_importance.csv` moved by up to ~1.5% (sessions_90d mean |SHAP| 0.2758 to

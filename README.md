@@ -28,7 +28,7 @@ The solution is designed as a complete analytical product rather than a standalo
 | Lift in top 10% | 1.77x |
 | CLV champion MAE / R² | TRY 1,259 / 0.564 |
 | Prioritized campaign targets | 3,501 |
-| Allocated campaign budget | TRY 236K |
+| Allocated campaign budget | TRY 237K |
 | Expected incremental margin | TRY 547K |
 
 ## Business Questions

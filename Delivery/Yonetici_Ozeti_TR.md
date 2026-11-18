@@ -6,7 +6,7 @@ Portföy son 12 ayda 55,6 milyon TRY net gelir üretirken, ileri 12 aylık tahmi
 
 Kalibre edilmiş Random Forest churn modeli zaman bazlı holdout üzerinde 0,867 ROC-AUC, 0,908 PR-AUC ve en yüksek riskli %10'luk grupta 1,77x lift sağlamaktadır. Random Forest CLV modeli 1.259 TRY MAE, 0,564 R² ve 0,791 Spearman korelasyonu üretmektedir.
 
-Karar motoru, riski otomatik harcama sebebi olarak kabul etmez. Müşteri değerini, pazarlama iznini, beklenen yanıtı ve teklif maliyetini birlikte değerlendirir. Sonuç olarak 3.501 müşteri aksiyonu önceliklendirilmiş, 236 bin TRY bütçe tahsis edilmiş ve 547 bin TRY beklenen artımlı marj hesaplanmıştır.
+Karar motoru, riski otomatik harcama sebebi olarak kabul etmez. Müşteri değerini, pazarlama iznini, beklenen yanıtı ve teklif maliyetini birlikte değerlendirir. Sonuç olarak 3.501 müşteri aksiyonu önceliklendirilmiş, 237 bin TRY bütçe tahsis edilmiş ve 547 bin TRY beklenen artımlı marj hesaplanmıştır.
 
 Tam çözüm; Power BI, Excel, Tableau, SQL, FastAPI, Streamlit, Türkçe/İngilizce yönetici sunumları, vektör HD rapor, otomatik testler, veri kalitesi kapıları, drift takibi, adalet kontrolleri ve model dokümantasyonunu kapsamaktadır.
 

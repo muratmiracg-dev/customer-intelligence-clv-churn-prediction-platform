@@ -12,7 +12,7 @@ Açıklama:
 
 - SHAP açıklamaları, olasılık kalibrasyonu, PSI drift takibi, bölge/yaş bandı adalet kontrolleri, model kartları ve otomatik veri kalitesi kapıları ekledim.
 
-- Churn riski, CLV, RFM, pazarlama izni, beklenen yanıt, teklif maliyeti ve bütçe sınırlarını birleştiren aksiyon motoru tasarladım. 3.501 müşteriyi 236 bin TRY bütçe ve 547 bin TRY beklenen artımlı marjla önceliklendirdim.
+- Churn riski, CLV, RFM, pazarlama izni, beklenen yanıt, teklif maliyeti ve bütçe sınırlarını birleştiren aksiyon motoru tasarladım. 3.501 müşteriyi 237 bin TRY bütçe ve 547 bin TRY beklenen artımlı marjla önceliklendirdim.
 
 - 12 sayfalık Power BI PBIP, 24 sayfalık formül destekli Excel planlayıcısı, Tableau workbook, SQLite veri tabanı, FastAPI, Streamlit, 20'şer sayfalık Türkçe/İngilizce sunum ve 12 sayfalık vektör HD rapor teslim ettim.
 
