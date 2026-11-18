@@ -8,11 +8,11 @@ Açıklama:
 
 - RFM segmentasyonu, M0–M12 cohort analizi, 90 günlük churn ve 12 aylık tahmine dayalı CLV için yeniden kullanılabilir müşteri kesitleri ürettim. Gelecek bilgisi sızıntısını önlemek için zaman bazlı validasyon uyguladım.
 
-- Churn için 0,867 ROC-AUC, 0,908 PR-AUC ve ilk %10'da 1,77x lift sağlayan kalibre Random Forest; CLV için 1.258 TRY MAE, 0,564 R² ve 0,792 Spearman korelasyonuna sahip Random Forest Regressor seçtim.
+- Churn için 0,867 ROC-AUC, 0,908 PR-AUC ve ilk %10'da 1,77x lift sağlayan kalibre Random Forest; CLV için 1.259 TRY MAE, 0,564 R² ve 0,791 Spearman korelasyonuna sahip Random Forest Regressor seçtim.
 
 - SHAP açıklamaları, olasılık kalibrasyonu, PSI drift takibi, bölge/yaş bandı adalet kontrolleri, model kartları ve otomatik veri kalitesi kapıları ekledim.
 
-- Churn riski, CLV, RFM, pazarlama izni, beklenen yanıt, teklif maliyeti ve bütçe sınırlarını birleştiren aksiyon motoru tasarladım. 3.501 müşteriyi 236 bin TRY bütçe ve 547 bin TRY beklenen artımlı marjla önceliklendirdim.
+- Churn riski, CLV, RFM, pazarlama izni, beklenen yanıt, teklif maliyeti ve bütçe sınırlarını birleştiren aksiyon motoru tasarladım. 3.501 müşteriyi 237 bin TRY bütçe ve 547 bin TRY beklenen artımlı marjla önceliklendirdim.
 
 - 12 sayfalık Power BI PBIP, 24 sayfalık formül destekli Excel planlayıcısı, Tableau workbook, SQLite veri tabanı, FastAPI, Streamlit, 20'şer sayfalık Türkçe/İngilizce sunum ve 12 sayfalık vektör HD rapor teslim ettim.
 

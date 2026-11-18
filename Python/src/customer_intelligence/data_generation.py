@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from collections import Counter
 from dataclasses import dataclass
 
 import numpy as np
@@ -377,9 +378,10 @@ def generate_orders(
                     returned_amount += line_return
                     net_revenue += recognized_net
                     gross_margin += line_margin
-                primary_category = max(
-                    set(categories_for_order), key=categories_for_order.count
-                )
+                # Most frequent category; ties go to the category bought first. A
+                # max() over a set broke ties by string-hash order, which Python
+                # randomises per process, so every run produced different raw data.
+                primary_category = Counter(categories_for_order).most_common(1)[0][0]
                 order_rows.append(
                     {
                         "order_id": order_id,
