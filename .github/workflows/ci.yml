@@ -60,7 +60,7 @@ jobs:
           python scripts/compare_outputs.py "$RUNNER_TEMP/committed"
 
       - name: Upload coverage
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: coverage-report
           path: coverage.xml
