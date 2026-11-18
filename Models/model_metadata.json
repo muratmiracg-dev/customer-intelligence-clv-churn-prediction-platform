@@ -35,7 +35,7 @@
     "sample_size": 60,
     "background_size": 24,
     "feature_count": 16,
-    "additivity_mean_absolute_error": 2.590520390792032e-16
+    "additivity_mean_absolute_error": 2.3684757858670006e-16
   },
   "python_version": "3.12.3",
   "sklearn_version": "1.9.0",

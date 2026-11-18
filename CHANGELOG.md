@@ -11,6 +11,9 @@
   2,683, revenue at risk TRY 5.97M -> 5.93M, churn ROC-AUC 0.8666 -> 0.8668, operating
   threshold 0.33 -> 0.32, CLV MAE TRY 1,258 -> 1,259). README, model cards and delivery notes
   updated; the Excel, deck, PDF, Power BI and Tableau files are static exports of the earlier run.
+- Seeded SHAP's permutation explainer. Without a seed the sampled permutations changed every
+  run, so `shap_global_importance.csv` moved by up to ~1.5% (sessions_90d mean |SHAP| 0.2758 to
+  0.2797 across runs) and local explanations by more.
 - CI now rebuilds the pipeline and compares every committed CSV/JSON value with the rebuild
   (`scripts/compare_outputs.py`, relative tolerance 1e-9).
 - Pinned `scikit-learn==1.9.0`, the version that pickled `Models/churn_champion.joblib` and

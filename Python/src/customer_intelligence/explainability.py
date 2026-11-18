@@ -61,6 +61,9 @@ def calculate_shap_outputs(
             background.to_numpy(),
             feature_names=FEATURE_COLUMNS,
             algorithm="permutation",
+            # Without a seed the sampled permutations, and so the published SHAP
+            # values, changed on every run.
+            seed=20260727,
         )
         explanation = explainer(
             x_eval.to_numpy(),
