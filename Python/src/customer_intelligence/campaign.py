@@ -188,10 +188,32 @@ def recommend_campaigns(
         selected_customers=("selected_for_campaign", "sum"),
         allocated_budget=("allocated_budget", "sum"),
         expected_incremental_margin=("expected_incremental_margin", "sum"),
-        average_expected_roi=("expected_roi", "mean"),
         average_churn_probability=("churn_probability", "mean"),
         predicted_clv=("predicted_clv_12m", "sum"),
     )
+    # Average ROI of the customers actually contacted. Unselected rows carry ROI 0, so a
+    # mean over every eligible customer understated thinly funded actions: Win-Back showed
+    # 0.25x (below break-even in the ROI chart) while its 237 selected customers average 1.91x.
+    selected_roi = (
+        frame.loc[frame["selected_for_campaign"].eq(1)]
+        .groupby("recommended_action")["expected_roi"]
+        .mean()
+    )
+    summary["average_expected_roi"] = (
+        summary["recommended_action"].map(selected_roi).fillna(0.0).astype(float)
+    )
+    summary = summary[
+        [
+            "recommended_action",
+            "eligible_customers",
+            "selected_customers",
+            "allocated_budget",
+            "expected_incremental_margin",
+            "average_expected_roi",
+            "average_churn_probability",
+            "predicted_clv",
+        ]
+    ]
     summary["expected_total_value"] = (
         summary["allocated_budget"] + summary["expected_incremental_margin"]
     )

@@ -26,22 +26,22 @@
   },
   {
     "path": "Reports/Customer_Intelligence_Executive_Report_12_Page_Vector_HD.pdf",
-    "size_bytes": 81428,
-    "sha256": "3529e8f74a8c1d6a4abbd2648e1a53a4e08904add710af91c189571b55a68b87"
+    "size_bytes": 81402,
+    "sha256": "f288962e034c8d920ef794570e675bffac5117cfc05429d7858425ec9da869ec"
   },
   {
     "path": "Models/churn_champion.joblib",
-    "size_bytes": 11180317,
-    "sha256": "c818a4f656033c4579db5153cc97fc6e89a205b651e999f494342e3da7b7fc0a"
+    "size_bytes": 11087624,
+    "sha256": "5ae9c953a63b58b82ae59601f60f9563d62c24cd5f1a8923361851f2b6d59932"
   },
   {
     "path": "Models/clv_champion.joblib",
-    "size_bytes": 4910352,
-    "sha256": "a1635d8348cef1915dc1162d9729c0deff0de67f05887a40da0a57f63d8a7556"
+    "size_bytes": 4850993,
+    "sha256": "663f56db2b1477b520e5598b728d1054fef8bafedb2a6d9f8a01abd1cef9df34"
   },
   {
     "path": "SQL/customer_intelligence.db",
-    "size_bytes": 33116160,
-    "sha256": "f543f69b40568533db499fc18df3c0276a793a64a2fde46b490217d04ea63ce0"
+    "size_bytes": 37900288,
+    "sha256": "28ec248237a98640b8d72174c863fb7a1f0a431891b8f6680a7ce0765d934269"
   }
 ]
