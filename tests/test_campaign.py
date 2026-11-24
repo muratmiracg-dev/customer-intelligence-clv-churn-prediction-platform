@@ -120,3 +120,28 @@ def test_recommend_campaigns_keeps_allocation_within_budget(
 
     assert targets["allocated_budget"].sum() <= 95.0
     assert targets["customer_id"].is_unique
+
+
+def test_campaign_summary_roi_averages_only_contacted_customers(
+    campaign_inputs: tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame],
+) -> None:
+    customer_ids = ["C001", "C003", "C004", "C005"]
+    tied_inputs = []
+    for frame in campaign_inputs:
+        rows = pd.concat([frame.iloc[[0]].copy() for _ in customer_ids], ignore_index=True)
+        rows["customer_id"] = customer_ids
+        tied_inputs.append(rows)
+
+    targets, summary = recommend_campaigns(*tied_inputs, budget=95.0)
+
+    selected = targets[targets["selected_for_campaign"].eq(1)]
+    assert len(selected) == 1
+    row = summary.set_index("recommended_action").loc[selected["recommended_action"].iloc[0]]
+    assert row["eligible_customers"] == 4
+    assert row["selected_customers"] == 1
+    # One contacted customer: the action ROI is that customer's ROI, not diluted 4x by
+    # the three unfunded customers carrying ROI 0.
+    assert row["average_expected_roi"] == pytest.approx(selected["expected_roi"].iloc[0])
+    assert row["average_expected_roi"] == pytest.approx(
+        row["expected_incremental_margin"] / row["allocated_budget"]
+    )
